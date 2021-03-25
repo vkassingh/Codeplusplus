@@ -4,3 +4,9 @@ A live code editor for HTML, CSS and Javascript started on 21st march 2021. I st
 where code++ can help you.
 
 ## Any kind of contributions are most welcome 🤘
+
+## Why Code++ ?
+1. You do not need a high end laptop. 
+2. You do not need an IDE
+3. You can code from anywhere
+4. You can collaborate in real time with your teammate
