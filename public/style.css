@@ -1,0 +1,114 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+
+.visitor_count{
+  display:flex;
+  
+}
+h4{
+  font-family: helvetica;
+}
+
+h3{
+  font-family:helvetica;
+}
+
+/*header*/
+header#playground_header {
+  background: black;
+  height: 50px;
+}
+
+
+header#playground_header > h1 {
+  padding: 0;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  height: 100%;
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  font-size: 25px; 
+  padding-top: 10px;
+  font-family: helvetica;
+}
+
+p{  padding-left:10px;
+  padding-right: 5px;
+   padding-bottom:10px;
+    font-family: helvetica;  
+    color: white;
+   background: black;
+   line-height: 20px;
+  /*text-align: center;*/
+     border-bottom: 10px solid white;
+}
+
+.form-group{
+   padding-left: 5px;
+  
+}
+
+.buttons{
+   /*display: flex; /*creates a flex box for its children*/
+/*justify-content: space-evenly; /*to evenly distribute items on the line*/
+  padding-left: 5px;
+}
+button{
+  border-radius: 8px;
+  background-color: #0493E3;
+ color: white;  /*text-color*/
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 5px 12px;
+  text-align: center;
+    text-decoration: none;
+}
+
+/*output area css*/
+iframe#code {
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border: unset;
+  /*background: #DCBEEA;*/
+}
+
+
+.prism-live {
+  min-height: 1000px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+div#coding_area > div {
+  width: 100%;
+  border-left: 25px solid #A31EE1;
+}
+div#coding_area > div:first-child {
+  border-left: none;
+}
+
+div#coding_area {
+  width: 100%;
+  height: calc(60vh - 60px);
+  min-height: 200px;
+  display: flex;
+  overflow: hidden;
+  border-bottom: 2px solid black;
+  
+}
+div#code_output {
+  height: 100%; 
+   border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
