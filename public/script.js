@@ -24,15 +24,15 @@ setInterval(() => {
     localStorage.setItem("js",js.value);
     console.log(localStorage);
 }, 2000)
-// const countE2 = document.getElementById('counts');
-// updateVisitCount();
-// function updateVisitCount() {
-// 	fetch('https://api.countapi.xyz/hit/codeplusplus/visits')
-// 	.then(res => res.json())
-// 	.then(res => {
-// 		// countE2.innerHTML = res.value;
-// 	})
-// }
+ const countE2 = document.getElementById('counts');
+ updateVisitCount();
+ function updateVisitCount() {
+ 	fetch('https://api.countapi.xyz/hit/codeplusplus/visits')
+ 	.then(res => res.json())
+ 	.then(res => {
+ 		// countE2.innerHTML = res.value;
+ 	})
+ }
 
 
 
