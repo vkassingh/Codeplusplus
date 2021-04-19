@@ -1,4 +1,4 @@
-var fileName = document.getElementById("input-fileName");
+var fileName = document.getElementById("html-input-fileName");
 
 html.value = localStorage.getItem("html");
 css.value = localStorage.getItem("css");
@@ -49,5 +49,40 @@ function updateVisitCount() {
         })
 }
 
+
+$("#html-download-btn").click( function() {
+  event.preventDefault();
+  var text = $("#html").val();
+  var filename = $("#html-input-fileName").val()
+  var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+  saveAs(blob, filename+".html");
+});
+
+
+$("#html-download-btn").click( function() {
+  event.preventDefault();
+  var text = $("#css").val();
+  var filename = $("#html-input-fileName").val()
+  var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+  saveAs(blob, filename+".css");
+});
+
+
+$("#html-download-btn").click( function() {
+  event.preventDefault();
+  var text = $("#js").val();
+  var filename = $("#html-input-fileName").val()
+  var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+  saveAs(blob, filename+".js");
+});
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 
