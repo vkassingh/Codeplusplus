@@ -7,8 +7,14 @@
 
 
 .visitor_count{
-  display:flex;
-  
+  display:flex;}
+ 
+h1 {
+    color:white;
+  font-family: helvetica;
+  text-align: center;
+  font-size: 25px;
+  }
 }
 h4{
   font-family: helvetica;
@@ -21,21 +27,22 @@ h3{
 /*header*/
 header#playground_header {
   background: black;
-  height: 50px;
+  height: 30px;
 }
 
 
+}
 header#playground_header > h1 {
   padding: 0;
   text-align: center;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   height: 100%;
   display: flex;
   /*align-items: center;*/
   justify-content: center;
   font-size: 25px; 
-  padding-top: 10px;
+  padding-top: 7px;
   font-family: helvetica;
 }
 
@@ -52,7 +59,7 @@ p{  padding-left:10px;
 
 .form-group{
    padding-left: 5px;
-  
+  padding-top: 70px;
 }
 
 .buttons{
@@ -65,7 +72,7 @@ button{
   background-color: #0493E3;
  color: white;  /*text-color*/
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  padding: 5px 12px;
+  padding: 5px 10px;
   text-align: center;
     text-decoration: none;
 }
@@ -90,8 +97,16 @@ iframe#code {
 
 div#coding_area > div {
   width: 100%;
-  border-left: 25px solid #A31EE1;
+  border-right: 25px solid ;
+  border-left: 2px solid ;
+  border-top: 2px solid ;
 }
+
+
+
+
+
+
 div#coding_area > div:first-child {
   border-left: none;
 }
@@ -107,8 +122,199 @@ div#coding_area {
 }
 div#code_output {
   height: 100%; 
-   border-bottom: 2px solid black;
+   /*border-bottom: 2px solid black;*/
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
 
+.footer {
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    height: 40px;
+    line-height: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    white-space: nowrap;
+    color: #9b9dad;
+    background: #2c303a;
+    border-top: 1px solid #444857;
+    z-index: 10;
+    font-size: 1rem;
+}
+
+/*to float the hamburger menu on left side*/
+.navbar-left {
+  float: left;
+  margin-left: 15px;
+}
+
+
+#site-header {
+	position:fixed; /*to fix an element to its position on the page*/
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	background-color: black;
+	color: #000;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.2), 0 0 7px rgba(0, 0, 0, 0.2);
+	z-index: 100;  /*elements with higher z-index value is over other element*/
+  display: flex; /*creates a flex box for its children*/
+  justify-content:space-between; /*to evenly distribute items on the line*/
+}
+
+h1 {
+		font-size: 22px;
+		letter-spacing: 0.7px; 
+    color: white;
+		font-family: helvetica; 
+		postion:fixed; 
+    margin:10px; 
+    flex: 1;
+    text-align: center;
+    
+	}
+
+
+/*hamburger menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden; /*to clip content in padding box, no scrollbar provided*/
+  transition: 0.5s; /*to control animation timings*/
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover { /**hover krne p jo color chahye*/
+  color: #0493E3;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 20px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/*search icon demo-2*/
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: Helvetica;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=search] {
+background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+border: solid 1px #ccc;
+padding: 9px 10px 9px 32px;
+width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input[type=search]:focus {
+	width: 100px;
+	background-color: #fff;
+	border-color: blue;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+#demo-2{
+  postion: fixed; left: 100px; top: 4px; padding-top: 5px; float: right; padding-             right:5px;
+}
+
+/* Demo 2 */
+#demo-2 input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+	background-color: #fff;
+}
+#demo-2 input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+
+ 
+h1 {
+  color:white;
+  font-family: helvetica;
+  text-align: center;
+  font-size: 25px;
+  }
+}
